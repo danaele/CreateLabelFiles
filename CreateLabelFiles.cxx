@@ -83,7 +83,8 @@ int main ( int argc, char *argv[] )
 
         //Rename label file to create
         replace(labelName.begin(),labelName.end(),' ','-');
-        labelName += ".txt";
+        labelName += ".asc";
+
         std::cout<<labelName <<std::endl;
         //Write the ASCII file corresponding to one surface / one label
         outputFile.open(labelName.c_str() , std::ios::out);
